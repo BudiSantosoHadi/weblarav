@@ -1,0 +1,2 @@
+kita membuat folder partials ini untuk membuat menyimpan bagian bagian spesifik dalam sesuatu halaman yang nanti kita anngap sebagai komponen ada halaman yang pengen ada, ada halaman yang enggak, kita bisa bongkar pasang
+include , yield dll itu namanya "direktif"

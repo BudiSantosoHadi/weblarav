@@ -35,38 +35,38 @@ class DatabaseSeeder extends Seeder
 
         User::factory(3)->create();
 
-        Category::create([
-            'name' => 'Web Progamming',
-            'slug' => 'web-progamming'
-        ]);
+        // Category::create([
+        //     'name' => 'Web Progamming',
+        //     'slug' => 'web-progamming'
+        // ]);
 
-        Category::create([
-            'name' => 'Web Design',
-            'slug' => 'web-design'
-        ]);
+        // Category::create([
+        //     'name' => 'Web Design',
+        //     'slug' => 'web-design'
+        // ]);
 
-        Category::create([
-            'name' => 'Personal',
-            'slug' => 'personal'
-        ]);
-        Category::create([
-            'name' => 'Games',
-            'slug' => 'games'
-        ]);
-        Category::create([
-            'name' => 'Music',
-            'slug' => 'music'
-        ]);
-        Category::create([
-            'name' => 'Movie',
-            'slug' => 'movie'
-        ]);
-
-
+        // Category::create([
+        //     'name' => 'Personal',
+        //     'slug' => 'personal'
+        // ]);
+        // Category::create([
+        //     'name' => 'Games',
+        //     'slug' => 'games'
+        // ]);
+        // Category::create([
+        //     'name' => 'Music',
+        //     'slug' => 'music'
+        // ]);
+        // Category::create([
+        //     'name' => 'Movie',
+        //     'slug' => 'movie'
+        // ]);
 
 
 
-        Post::factory(20)->create();
+
+
+        // Post::factory(20)->create();
 
         // Post::create([
         //     'title' => 'Judul Pertama',

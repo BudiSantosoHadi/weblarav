@@ -24,7 +24,7 @@
      <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <title> {{ $title }} </title>
   </head>
-  <body class="" style="background-color: #2D325A;" >
+  <body class="bg-light" >
 {{-- di halaman ini navbar nya di ambil di pindah kan ke file navbar blade lalu di halaman ini kita kasih tau dengan mengguanakan tag include  bahwa disini akan tersimpan sebuah navbar--}}
 @include('partials.navbar')
 

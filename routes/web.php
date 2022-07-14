@@ -28,8 +28,47 @@ use Psy\CodeCleaner\FunctionReturnInWriteContextPass;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "home" ,//buat title nya supaya auto berubah rubah
+        "title" => "PondokAinulYakin" ,//buat title nya supaya auto berubah rubah
         "active" => "home"
+    ]);
+});
+
+Route::get('/donasi', function () {
+    return view('donasi', [
+        "title" => "donasi" ,//buat title nya supaya auto berubah rubah
+        "active" => "donasi"
+    ]);
+});
+Route::get('/tahfidz', function () {
+    return view('tahfidz', [
+        "title" => "Tahfidz" ,//buat title nya supaya auto berubah rubah
+        "active" => "tahfidz"
+    ]);
+});
+Route::get('/kewira', function () {
+    return view('kewira', [
+        "title" => "Kewirausahaan" ,//buat title nya supaya auto berubah rubah
+        "active" => "kewirausahaan"
+    ]);
+});
+Route::get('/terapi', function () {
+    return view('terapi', [
+        "title" => "Terapi" ,//buat title nya supaya auto berubah rubah
+        "active" => "terapi"
+    ]);
+});
+
+Route::get('/konsult', function () {
+    return view('konsult', [
+        "title" => "Konsultasi" ,//buat title nya supaya auto berubah rubah
+        "active" => "konsultasi"
+    ]);
+});
+
+Route::get('/zisway', function () {
+    return view('zisway', [
+        "title" => "Zisway" ,//buat title nya supaya auto berubah rubah
+        "active" => "zisway"
     ]);
 });
 

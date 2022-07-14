@@ -21,30 +21,15 @@
 </div>
   </nav> --}}
 
-  <nav class="navbar navbar-expand-lg navbar-dark mb-5" style="background-color:  #202442">
-    <div class="container d-flex">
-        <a class="navbar-brand" href="/">My Blog</a>
+  <nav class="navbar navbar-expand-lg bg-light p-3 " style="outline: none" >
+    <div class="container-fluid">
+        <a style="outline: none" class="navbar-brand" href="/">Pondok Pesantren <span class="">Ainul Yakin</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-        <a class="nav-link {{ ($active === "home") ? 'active' : '' }} " href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ ($active === "about") ? 'active' : '' }}" href="/about">About</a>
-            {{-- cara memakai link aktif versi lain memakai variable $active --}}
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ ($active === "posts") ? 'active' : '' }}" href="/posts">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ ($active === "categories") ? 'active' : '' }}" href="/categories">Categories</a>
-          </li>
+        <ul class="navbar-nav d-flex ">
         </ul>
-
-
         <ul class="navbar-nav" style="-webkit-margin-start: auto">
         @auth
         <li class="nav-item dropdown">
@@ -73,6 +58,37 @@
          </div>
       </div>
   </nav>
+  <div class="container-fluid">
+
+    <ul class="nav nav-tabs bg-light" style="outline: none" id="myTab" role="tablist">
+        <li style="outline:none;" class="nav-item bg-light" role="presentation">
+            <a style="color: black; " class="nav-link bg-light {{ ($active === "home") ? 'active' : '' }} " href="/"> Home </a>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "about") ? 'active' : '' }}" href="/about">Profile Pondok</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "donasi") ? 'active' : '' }}" href="/donasi">Donasi</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "tahfidz") ? 'active' : '' }}" href="/tahfidz">Tahfidz</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "terapi") ? 'active' : '' }}" href="/terapi">Terapi</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "kewirausahaan") ? 'active' : '' }}" href="/kewira">Kewirausahaan</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "konsultasi") ? 'active' : '' }}" href="/konsult">Konsultasi</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "zisway") ? 'active' : '' }}" href="/zisway">Zisway</a>
+        </li>
+        <li style="outline:none;" class="nav-item" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "posts") ? 'active' : '' }}" href="/posts">tentang</a>
+        </li>
+         </ul>
+  </div>
 {{--
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
     <div class="container-fluid">

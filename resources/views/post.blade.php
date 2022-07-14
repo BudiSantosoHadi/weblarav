@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-md-8">
-                <h1 class="mb-3">{{ $post->title }}</h1>
+                <h1 class="mb-6">{{ $post->title }}</h1>
 
                 <p>By,<a href="/posts?author={{ $post->author->username }}">{{ $post->author->name }}</a> In <a href="/posts?category={{ $post->category->slug }}">{{ $post->category->name }}</a></p>
     {{-- dan setelah a href itu maksudnya adalah apabila kita tekan tombol categori nya maka muncul semua post yang kategori itu --}}

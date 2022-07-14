@@ -23,7 +23,7 @@
 
   <nav class="navbar navbar-expand-lg bg-light p-3 " style="outline: none" >
     <div class="container-fluid">
-        <a style="outline: none" class="navbar-brand" href="/">Pondok Pesantren <span class="">Ainul Yakin</span></a>
+        <a style="outline: none" class="navbar-brand" href="/"><span class="" style="font-size:31px; font-weight:600; color: rgb(189, 17, 17)"> P</span>ondok Pesantren<span class="d-flex" style="padding: 0 0 0 20px;">Ainul Yakin</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,8 +48,8 @@
             </ul>
           </li>
             @else
-            <li class="nav-item">
-              <a href="/login" class="nav-link {{ ($active === "login") ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+            <li style="outline:none;" class="nav-item">
+              <a href="/login" style="color: red" class="nav-link {{ ($active === "login") ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i> Daftar</a>
             </li>
             @endauth
           </ul>
@@ -61,9 +61,10 @@
   <div class="container-fluid">
 
     <ul class="nav nav-tabs bg-light" style="outline: none" id="myTab" role="tablist">
-        <li style="outline:none;" class="nav-item bg-light" role="presentation">
-            <a style="color: black; " class="nav-link bg-light {{ ($active === "home") ? 'active' : '' }} " href="/"> Home </a>
-        <li style="outline:none;" class="nav-item" role="presentation">
+        <li style="outline:none; margin:0 0 0 80px;" class="nav-item bg-light" role="presentation">
+            <a style="color: black; " class="nav-link {{ ($active === "home") ? 'active' : '' }} " href="/"> Home </a>
+        </li>
+        <li style="outline:none;" class="nav-item " role="presentation">
             <a style="color: black; " class="nav-link {{ ($active === "about") ? 'active' : '' }}" href="/about">Profile Pondok</a>
         </li>
         <li style="outline:none;" class="nav-item" role="presentation">
